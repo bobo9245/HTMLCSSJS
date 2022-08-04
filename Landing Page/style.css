@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mouse+Memoirs&display=swap');
+:root{
+    --red:#ff0000;
+    --orange:#ff8c00;
+    --yellow:#ffff00;
+    --green:#008000;
+    --blue:#0000ff;
+    --indigo:#4b0082;
+    --purple:#800080;
+}
+section{
+    height:100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    width:100%;
+    height:100%;
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(180deg, #ddd,#666,black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+#container{
+    animation:bgcolor 6s infinite;
+    position:fixed;
+    height:100%;
+    width:100%;
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes bgcolor{
+    0%{
+        background:#111111;
+    }
+    50%{
+        background:black;
+    }
+    100%{
+        background:#111111;
+    }
+}
+
+#header{
+    width:100%;
+    height:4%;
+    /* border-image:linear-gradient(120deg, red,black);
+    border-image-slice:1; */
+    position:absolute;
+    top:1px;
+    font-size: 13px;
+    font-weight: bolder;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    box-sizing:border-box;
+    border-bottom:2px solid grey;
+}
+#header>a{
+    font-family: 'BhuTuka Expanded One', cursive;
+    color:white;
+}
+
+#main{
+
+}
+
+#footer{
+
+}
+
+
