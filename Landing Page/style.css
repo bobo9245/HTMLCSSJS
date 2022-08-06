@@ -9,7 +9,7 @@
     --purple:#800080;
 }
 section{
-    height:300vh;
+    height:100vh;
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
@@ -20,25 +20,23 @@ a{
 html,body{
     width:100%;
     height:100%;
-    scroll-behavior: smooth;
+	scroll-behavior:smooth;
     font-family: 'BhuTuka Expanded One', cursive;
 }
 body{
-    background:linear-gradient(180deg, #ddd,#666,black);
+	background-color:black;
     display:flex;
-    justify-content: center;
-    align-items: center;
     margin:0;
 }
 #container{
     animation:bgcolor 6s infinite;
-    position:fixed;
-    height:100%;
-    width:100%;
-    margin:auto;
+    position:absolute;
+    height:200%;
+    width:99.8%;
     display:flex;
-    justify-content: space-around;
-    align-items: center;
+	flex-direction:column;
+    justify-content:center;
+	align-items:center;
 }
 @keyframes bgcolor{
     0%{
@@ -53,8 +51,9 @@ body{
 }
 
 #header{
+	animation:bgcolor 6s infinite;
     width:100%;
-    height:4%;
+    height:4vh;
     /* border-image:linear-gradient(120deg, red,black);
     border-image-slice:1; */
 	position:fixed;
@@ -71,16 +70,58 @@ body{
 	color:white;
 }
 
-#main{
 
+
+#main{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	justify-content:flex-start;
+	align-items:stretch;
+}
+
+.section{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	
+	margin:1px;
 }
 
 .info{
 	color:white;
+	width:100%;
+	font-size:13px;
+	font-weight:700;
+	vertical-align:center;
+	box-sizing:border-box;
+	margin-top:6vh;
+	margin-bottom:3vh;
+	border-bottom:1px ridge transparent;
+	border-image:linear-gradient(to right, red,blue);
+	border-image-slice:1;
+	padding:0 0 1.5vh 1vw;
+}
+
+#aboutContainer{
+	border:2px soild white;
+	width:99.8vh;
+	height:20vh;
+	flex-direction:row;
+		
+}
+#picture{
+	width:25%;
+	height:110%;
+	background-color:blue;
 }
 
 #footer{
-
+	margin-top:auto;
+	width:100%;
+	height:8vh;
+	border:2px solid white;
 }
-
 
