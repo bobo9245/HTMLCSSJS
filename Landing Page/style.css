@@ -127,12 +127,17 @@ body{
 	align-items:center;
 }
 #picture{
-	width:200px;
-	height:200px;
-	border : 2px dashed white;
+	width:250px;
+	height:250px;
+	border-radius:20px 0 0 100px/100px 0 0 10px;
+	border : 5px dashed white;
+	background-color:grey;
+	background-image:url('assets/My-Picture.jpg');
+	background-size:cover;
+	background-position:center;
 }
 #words{
-	width:50%;
+	width:calc(100vh - 350px);
 	height:280px;
 	border : 2px solid white;
 }
