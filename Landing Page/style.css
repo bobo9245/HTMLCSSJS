@@ -28,6 +28,7 @@ a:hover{
 html,body{
     width:99.7%;
     height:100%;
+	color:white;
 	scroll-behavior:smooth;
     font-family: 'BhuTuka Expanded One', cursive;
 }
@@ -124,17 +125,32 @@ body{
 #picture{
 	width:250px;
 	height:250px;
-	border-radius:20px 0 0 100px/100px 0 0 10px;
+	border-radius:20px 10px 100px 100px/100px 100px 20px 10px;
 	border : 5px dashed white;
-	background-color:grey;
-	background-image:url('assets/My-Picture.jpg');
+	background-color:black;
+	/* background-image:url('assets/My-Picture.jpg'); */
 	background-size:cover;
 	background-position:center;
 }
 #words{
-	width:calc(100vh - 350px);
+	font-family: 'Kanit', sans-serif;
+	box-sizing:border-box;
+	width:calc(100% - 300px);
 	height:280px;
 	border : 2px solid white;
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-template-rows:minmax(2,minmax(100px,auto));
+	grid-gap:15px 15px;
+	padding:10px;
+}
+@media(max-width:500px){
+}
+.word{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border : 2px solid grey;
 }
 #footer{
 	margin-top:auto;
